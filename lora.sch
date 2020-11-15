@@ -1440,4 +1440,28 @@ F 3 "~" H 1400 1100 50  0001 C CNN
 	1    1400 1100
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:Conn_Coaxial J11
+U 1 1 5FC31EE2
+P 10475 3650
+F 0 "J11" H 10575 3625 50  0000 L CNN
+F 1 "Conn_Coaxial" H 10575 3534 50  0000 L CNN
+F 2 "" H 10475 3650 50  0001 C CNN
+F 3 " ~" H 10475 3650 50  0001 C CNN
+	1    10475 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0146
+U 1 1 5FC3451D
+P 10475 3850
+F 0 "#PWR0146" H 10475 3600 50  0001 C CNN
+F 1 "GND" H 10480 3677 50  0000 C CNN
+F 2 "" H 10475 3850 50  0001 C CNN
+F 3 "" H 10475 3850 50  0001 C CNN
+	1    10475 3850
+	1    0    0    -1  
+$EndComp
+Text Notes 10275 3500 0    50   ~ 0
+SMA or just a\nsimple short wire
 $EndSCHEMATC

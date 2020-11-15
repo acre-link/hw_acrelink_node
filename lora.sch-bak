@@ -13,8 +13,8 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 4050 2875 0    50   ~ 0
-Ist 32D wirkich der Richtige?  \nDa gibt es auch noch andere Endbuchstaben. 
+Text Notes 3050 5775 0    50   ~ 0
+3.0V - 3.6V
 $Comp
 L RF_Module:RFM95W-868S2 U?
 U 1 1 5FAAB373
@@ -218,50 +218,26 @@ F 3 "" H 1700 875 50  0001 C CNN
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x03 J?
-U 1 1 5FACD2CF
-P 3325 7200
-F 0 "J?" H 3405 7242 50  0000 L CNN
-F 1 "Temp" H 3405 7151 50  0000 L CNN
-F 2 "" H 3325 7200 50  0001 C CNN
-F 3 "~" H 3325 7200 50  0001 C CNN
-	1    3325 7200
-	1    0    0    -1  
-$EndComp
-Text Notes 3250 7450 0    50   ~ 0
-One Wire Connector
-$Comp
-L power:GND #PWR0110
-U 1 1 5FACD2D6
-P 3125 7300
-F 0 "#PWR0110" H 3125 7050 50  0001 C CNN
-F 1 "GND" H 3130 7127 50  0000 C CNN
-F 2 "" H 3125 7300 50  0001 C CNN
-F 3 "" H 3125 7300 50  0001 C CNN
-	1    3125 7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J?
 U 1 1 5FACDB08
-P 1600 7175
-F 0 "J?" H 1680 7217 50  0000 L CNN
-F 1 "Humidity" H 1680 7126 50  0000 L CNN
-F 2 "" H 1600 7175 50  0001 C CNN
-F 3 "~" H 1600 7175 50  0001 C CNN
-	1    1600 7175
+P 1675 6350
+F 0 "J?" H 1755 6392 50  0000 L CNN
+F 1 "Humidity" H 1755 6301 50  0000 L CNN
+F 2 "" H 1675 6350 50  0001 C CNN
+F 3 "~" H 1675 6350 50  0001 C CNN
+	1    1675 6350
 	1    0    0    -1  
 $EndComp
-Text Notes 1525 7425 0    50   ~ 0
+Text Notes 1600 6600 0    50   ~ 0
 One Wire Connector
 $Comp
 L power:GND #PWR0111
 U 1 1 5FACDB0F
-P 1400 7275
-F 0 "#PWR0111" H 1400 7025 50  0001 C CNN
-F 1 "GND" H 1405 7102 50  0000 C CNN
-F 2 "" H 1400 7275 50  0001 C CNN
-F 3 "" H 1400 7275 50  0001 C CNN
-	1    1400 7275
+P 1475 6450
+F 0 "#PWR0111" H 1475 6200 50  0001 C CNN
+F 1 "GND" H 1480 6277 50  0000 C CNN
+F 2 "" H 1475 6450 50  0001 C CNN
+F 3 "" H 1475 6450 50  0001 C CNN
+	1    1475 6450
 	1    0    0    -1  
 $EndComp
 Text Notes 625  675  0    50   ~ 0
@@ -291,34 +267,23 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 5FAD2011
-P 10150 6000
-F 0 "J?" H 10230 5992 50  0000 L CNN
-F 1 "SIM800" H 10230 5901 50  0000 L CNN
-F 2 "" H 10150 6000 50  0001 C CNN
-F 3 "~" H 10150 6000 50  0001 C CNN
-	1    10150 6000
+P 9875 5875
+F 0 "J?" H 9955 5867 50  0000 L CNN
+F 1 "SIM800" H 9955 5776 50  0000 L CNN
+F 2 "" H 9875 5875 50  0001 C CNN
+F 3 "~" H 9875 5875 50  0001 C CNN
+	1    9875 5875
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0113
 U 1 1 5FAD2017
-P 9950 6200
-F 0 "#PWR0113" H 9950 5950 50  0001 C CNN
-F 1 "GND" H 9955 6027 50  0000 C CNN
-F 2 "" H 9950 6200 50  0001 C CNN
-F 3 "" H 9950 6200 50  0001 C CNN
-	1    9950 6200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Regulator_Linear:AZ1117-3.3 U?
-U 1 1 5FAD28BA
-P 1900 1350
-F 0 "U?" H 2050 1100 50  0000 C CNN
-F 1 "AZ1117-3.3" H 1600 1075 50  0000 C CNN
-F 2 "" H 1900 1600 50  0001 C CIN
-F 3 "https://www.diodes.com/assets/Datasheets/AZ1117.pdf" H 1900 1350 50  0001 C CNN
-	1    1900 1350
+P 9675 6075
+F 0 "#PWR0113" H 9675 5825 50  0001 C CNN
+F 1 "GND" H 9680 5902 50  0000 C CNN
+F 2 "" H 9675 6075 50  0001 C CNN
+F 3 "" H 9675 6075 50  0001 C CNN
+	1    9675 6075
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -331,17 +296,6 @@ F 2 "" H 2400 1250 50  0001 C CNN
 F 3 "~" H 2400 1250 50  0001 C CNN
 	1    2400 1250
 	-1   0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR0114
-U 1 1 5FAD945E
-P 1900 1650
-F 0 "#PWR0114" H 1900 1400 50  0001 C CNN
-F 1 "GND" H 1905 1477 50  0000 C CNN
-F 2 "" H 1900 1650 50  0001 C CNN
-F 3 "" H 1900 1650 50  0001 C CNN
-	1    1900 1650
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J?
@@ -464,17 +418,6 @@ ONEWIRE2_DATA
 Text GLabel 4500 3300 2    50   Input ~ 0
 RFM_DIO0
 $Comp
-L Connector_Generic:Conn_01x04 J?
-U 1 1 5FAFE37D
-P 10475 1250
-F 0 "J?" H 10555 1242 50  0000 L CNN
-F 1 "I2C" H 10555 1151 50  0000 L CNN
-F 2 "" H 10475 1250 50  0001 C CNN
-F 3 "~" H 10475 1250 50  0001 C CNN
-	1    10475 1250
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0119
 U 1 1 5FAFEC6B
 P 10275 1450
@@ -485,19 +428,6 @@ F 3 "" H 10275 1450 50  0001 C CNN
 	1    10275 1450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VDD #PWR0120
-U 1 1 5FAFF168
-P 10275 1150
-F 0 "#PWR0120" H 10275 1000 50  0001 C CNN
-F 1 "VDD" H 10290 1323 50  0000 C CNN
-F 2 "" H 10275 1150 50  0001 C CNN
-F 3 "" H 10275 1150 50  0001 C CNN
-	1    10275 1150
-	1    0    0    -1  
-$EndComp
-Text Notes 9300 5775 0    50   ~ 0
-Achtung 3.3V laut Datenblatt nicht ausreichend. \n
 Text GLabel 3300 3100 0    50   Input ~ 0
 RESET
 $Comp
@@ -861,30 +791,28 @@ ESP32 Reference voltage\nis around 1100mV. \n
 $Comp
 L power:VDD #PWR?
 U 1 1 5FB525D9
-P 3125 7100
-F 0 "#PWR?" H 3125 6950 50  0001 C CNN
-F 1 "VDD" H 3140 7273 50  0000 C CNN
-F 2 "" H 3125 7100 50  0001 C CNN
-F 3 "" H 3125 7100 50  0001 C CNN
-	1    3125 7100
+P 3325 6375
+F 0 "#PWR?" H 3325 6225 50  0001 C CNN
+F 1 "VDD" H 3340 6548 50  0000 C CNN
+F 2 "" H 3325 6375 50  0001 C CNN
+F 3 "" H 3325 6375 50  0001 C CNN
+	1    3325 6375
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:VDD #PWR?
 U 1 1 5FB52EDA
-P 1400 7075
-F 0 "#PWR?" H 1400 6925 50  0001 C CNN
-F 1 "VDD" H 1415 7248 50  0000 C CNN
-F 2 "" H 1400 7075 50  0001 C CNN
-F 3 "" H 1400 7075 50  0001 C CNN
-	1    1400 7075
+P 1475 6250
+F 0 "#PWR?" H 1475 6100 50  0001 C CNN
+F 1 "VDD" H 1490 6423 50  0000 C CNN
+F 2 "" H 1475 6250 50  0001 C CNN
+F 3 "" H 1475 6250 50  0001 C CNN
+	1    1475 6250
 	1    0    0    -1  
 $EndComp
 Text GLabel 4500 3700 2    50   Input ~ 0
 ONEWIRE1_DATA
-Text GLabel 3125 7200 0    50   Input ~ 0
-ONEWIRE1_DATA
-Text GLabel 1400 7175 0    50   Input ~ 0
+Text GLabel 1475 6350 0    50   Input ~ 0
 ONEWIRE2_DATA
 Text Notes 1575 5550 0    50   ~ 0
 No Pull up or down required?
@@ -892,9 +820,9 @@ Text GLabel 4500 5300 2    50   Input ~ 0
 UART0_RX
 Text GLabel 4500 5400 2    50   Input ~ 0
 UART0_TX
-Text GLabel 9950 6000 0    50   Input ~ 0
+Text GLabel 9675 5875 0    50   Input ~ 0
 UART0_RX
-Text GLabel 9950 6100 0    50   Input ~ 0
+Text GLabel 9675 5975 0    50   Input ~ 0
 UART0_TX
 Text GLabel 3300 3300 0    50   Input ~ 0
 VDD_SENSE
@@ -912,6 +840,135 @@ Text GLabel 7850 4350 0    50   Input ~ 0
 RFM_RST
 Text GLabel 8850 4550 2    50   Input ~ 0
 RFM_DIO0
-Text Notes 4925 3325 0    50   ~ 0
-Eingang  Edge Interruptfähig?
+Text Notes 7675 3600 0    50   ~ 0
+1.8V - 3.9V
+Text GLabel 9150 1725 2    50   Input ~ 0
+RTC_IRQ
+Text GLabel 4500 3500 2    50   Input ~ 0
+RTC_IRQ
+$Comp
+L Device:R_Small R?
+U 1 1 5FADC7E3
+P 9150 1625
+F 0 "R?" V 9050 1650 50  0000 C CNN
+F 1 "10k" V 9255 1625 50  0000 C CNN
+F 2 "" H 9150 1625 50  0001 C CNN
+F 3 "~" H 9150 1625 50  0001 C CNN
+	1    9150 1625
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9150 1725 8750 1725
+$Comp
+L power:VDD #PWR0120
+U 1 1 5FAFF168
+P 10275 1150
+F 0 "#PWR0120" H 10275 1000 50  0001 C CNN
+F 1 "VDD" H 10290 1323 50  0000 C CNN
+F 2 "" H 10275 1150 50  0001 C CNN
+F 3 "" H 10275 1150 50  0001 C CNN
+	1    10275 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5FAFE37D
+P 10475 1250
+F 0 "J?" H 10555 1242 50  0000 L CNN
+F 1 "I2C" H 10555 1151 50  0000 L CNN
+F 2 "" H 10475 1250 50  0001 C CNN
+F 3 "~" H 10475 1250 50  0001 C CNN
+	1    10475 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5FAE014C
+P 9150 1525
+F 0 "#PWR?" H 9150 1375 50  0001 C CNN
+F 1 "VDD" H 9165 1698 50  0000 C CNN
+F 2 "" H 9150 1525 50  0001 C CNN
+F 3 "" H 9150 1525 50  0001 C CNN
+	1    9150 1525
+	1    0    0    -1  
+$EndComp
+Text GLabel 3325 6475 0    50   Input ~ 0
+ONEWIRE1_DATA
+$Comp
+L power:GND #PWR0110
+U 1 1 5FACD2D6
+P 3325 6575
+F 0 "#PWR0110" H 3325 6325 50  0001 C CNN
+F 1 "GND" H 3330 6402 50  0000 C CNN
+F 2 "" H 3325 6575 50  0001 C CNN
+F 3 "" H 3325 6575 50  0001 C CNN
+	1    3325 6575
+	1    0    0    -1  
+$EndComp
+Text Notes 3450 6725 0    50   ~ 0
+One Wire Connector
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 5FACD2CF
+P 3525 6475
+F 0 "J?" H 3605 6517 50  0000 L CNN
+F 1 "Temp" H 3605 6426 50  0000 L CNN
+F 2 "" H 3525 6475 50  0001 C CNN
+F 3 "~" H 3525 6475 50  0001 C CNN
+	1    3525 6475
+	1    0    0    -1  
+$EndComp
+Text Notes 1375 1725 0    50   ~ 0
+3.5V Buck converter > 2.5A ! Not needed in battery mode!
+Wire Wire Line
+	7950 1725 7625 1725
+Wire Wire Line
+	7625 1725 7625 1700
+Wire Wire Line
+	7950 1325 7625 1325
+Wire Wire Line
+	7625 1325 7625 1400
+Wire Wire Line
+	7625 1400 7425 1400
+Wire Wire Line
+	7425 1400 7425 1700
+Connection ~ 7625 1400
+$Comp
+L Device:C_Small C?
+U 1 1 5FAE7A45
+P 7425 1800
+F 0 "C?" H 7517 1846 50  0000 L CNN
+F 1 "12p" H 7517 1755 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7425 1800 50  0001 C CNN
+F 3 "~" H 7425 1800 50  0001 C CNN
+F 4 "C38523" H 7425 1800 50  0001 C CNN "LCSC"
+	1    7425 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5FAE88CE
+P 7425 1900
+F 0 "#PWR?" H 7425 1650 50  0001 C CNN
+F 1 "GND" H 7430 1727 50  0000 C CNN
+F 2 "" H 7425 1900 50  0001 C CNN
+F 3 "" H 7425 1900 50  0001 C CNN
+	1    7425 1900
+	1    0    0    -1  
+$EndComp
+Text Notes 8625 5500 0    50   ~ 0
+SIM800 requires up to 2A in burst mode and 3.4V to 4.4V
+Text Notes 7775 2025 0    50   ~ 0
+1.8V - 5.5V
+$Comp
+L power:VDD #PWR?
+U 1 1 5FB12BE1
+P 9675 5775
+F 0 "#PWR?" H 9675 5625 50  0001 C CNN
+F 1 "VDD" H 9690 5948 50  0000 C CNN
+F 2 "" H 9675 5775 50  0001 C CNN
+F 3 "" H 9675 5775 50  0001 C CNN
+	1    9675 5775
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

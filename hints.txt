@@ -1,0 +1,15 @@
+SIM800:
+https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
+https://exploreembedded.com/wiki/Setting_up_GPRS_with_SIM800L
+
+LTE Alternative:
+https://www.raviyp.com/don-t-use-sim900-sim908-sim800-sim808-modules-in-usa-2g-sunset/
+
+
+Feuchte Sensoren:
+https://www.metergroup.com/de/environment/produkte/teros-21/
+https://www.metergroup.com/de/environment/produkte/teros-10/
+https://www.metergroup.com/de/environment/
+
+https://de.aliexpress.com/item/32750933038.html?spm=a2g0o.productlist.0.0.62fa2b2dD94RVC&algo_pvid=56dd73b6-6484-4bd3-be9a-3d29279feaf3&algo_expid=56dd73b6-6484-4bd3-be9a-3d29279feaf3-32&btsid=2100bddb16056484973607092e316c&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
+https://de.aliexpress.com/store/915786

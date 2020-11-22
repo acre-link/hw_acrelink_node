@@ -1712,4 +1712,70 @@ F 3 "" H 10650 3350 50  0001 C CNN
 	1    10650 3350
 	0    -1   -1   0   
 $EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 5FE846A8
+P 2350 3875
+F 0 "H1" H 2450 3924 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2450 3833 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 2350 3875 50  0001 C CNN
+F 3 "~" H 2350 3875 50  0001 C CNN
+	1    2350 3875
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5FE8619C
+P 2350 3975
+F 0 "#PWR03" H 2350 3725 50  0001 C CNN
+F 1 "GND" H 2355 3802 50  0000 C CNN
+F 2 "" H 2350 3975 50  0001 C CNN
+F 3 "" H 2350 3975 50  0001 C CNN
+	1    2350 3975
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 5FEA1D5A
+P 2375 4425
+F 0 "H2" H 2475 4474 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2475 4383 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 2375 4425 50  0001 C CNN
+F 3 "~" H 2375 4425 50  0001 C CNN
+	1    2375 4425
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5FEA1D60
+P 2375 4525
+F 0 "#PWR04" H 2375 4275 50  0001 C CNN
+F 1 "GND" H 2380 4352 50  0000 C CNN
+F 2 "" H 2375 4525 50  0001 C CNN
+F 3 "" H 2375 4525 50  0001 C CNN
+	1    2375 4525
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 5FED213B
+P 2375 4925
+F 0 "H3" H 2475 4974 50  0000 L CNN
+F 1 "MountingHole_Pad" H 2475 4883 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2_DIN965_Pad" H 2375 4925 50  0001 C CNN
+F 3 "~" H 2375 4925 50  0001 C CNN
+	1    2375 4925
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 5FED2141
+P 2375 5025
+F 0 "#PWR05" H 2375 4775 50  0001 C CNN
+F 1 "GND" H 2380 4852 50  0000 C CNN
+F 2 "" H 2375 5025 50  0001 C CNN
+F 3 "" H 2375 5025 50  0001 C CNN
+	1    2375 5025
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

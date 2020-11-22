@@ -1601,7 +1601,7 @@ L Device:L_Small L2
 U 1 1 5FC42B81
 P 10250 3550
 F 0 "L2" V 10435 3550 50  0000 C CNN
-F 1 "0R" V 10344 3550 50  0000 C CNN
+F 1 "dnp" V 10344 3550 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 10250 3550 50  0001 C CNN
 F 3 "~" H 10250 3550 50  0001 C CNN
 F 4 "C21189" V 10250 3550 50  0001 C CNN "LCSC"
@@ -1678,4 +1678,38 @@ F 3 "" H 10350 3750 50  0001 C CNN
 $EndComp
 Text Notes 10350 3550 0    50   ~ 0
 PCB Antenna
+Wire Wire Line
+	10150 3550 10150 3250
+Wire Wire Line
+	10150 3250 10350 3250
+Wire Wire Line
+	10350 3250 10350 3350
+Connection ~ 10350 3550
+Text Notes 9900 3100 0    50   ~ 0
+Bridged. Cut if \nL-C Network is required. 
+$Comp
+L Jumper:SolderJumper_2_Bridged JP1
+U 1 1 5FDC7049
+P 10500 3350
+F 0 "JP1" H 10600 3450 50  0000 C CNN
+F 1 "SolderJumper_2_Bridged" H 10675 3500 50  0000 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 10500 3350 50  0001 C CNN
+F 3 "~" H 10500 3350 50  0001 C CNN
+	1    10500 3350
+	1    0    0    -1  
+$EndComp
+Connection ~ 10350 3350
+Wire Wire Line
+	10350 3350 10350 3550
+$Comp
+L power:GND #PWR02
+U 1 1 5FDC9B31
+P 10650 3350
+F 0 "#PWR02" H 10650 3100 50  0001 C CNN
+F 1 "GND" H 10655 3177 50  0000 C CNN
+F 2 "" H 10650 3350 50  0001 C CNN
+F 3 "" H 10650 3350 50  0001 C CNN
+	1    10650 3350
+	0    -1   -1   0   
+$EndComp
 $EndSCHEMATC

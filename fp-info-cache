@@ -1,4 +1,4 @@
-19006987246467455
+19008593047606682
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -58783,8 +58783,8 @@ L_MS1040-220M
 
 
 0
-0
-0
+2
+2
 OWN_Parts_
 SSCMRRN001PG2A3_SMT-8
 8-lead though-hole mounted DIP package, row spacing 8.89 mm (350 mils), SMDSocket, LongPads
@@ -76347,6 +76347,13 @@ Alps rotary encoder, EC12E..., vertical shaft, mounting holes with circular dril
 rotary encoder
 0
 5
+4
+SamacSys_Parts
+2460
+2460
+Undefined or Miscellaneous
+0
+4
 4
 SamacSys_Parts
 63391673

@@ -54,10 +54,10 @@ L Device:R_Small R7
 U 1 1 5FAB81D2
 P 4575 7125
 F 0 "R7" H 4516 7079 50  0000 R CNN
-F 1 "3k" H 4516 7170 50  0000 R CNN
+F 1 "30k" H 4516 7170 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4575 7125 50  0001 C CNN
 F 3 "~" H 4575 7125 50  0001 C CNN
-F 4 "C4211" H 4575 7125 50  0001 C CNN "LCSC"
+F 4 "C22984" H 4575 7125 50  0001 C CNN "LCSC"
 	1    4575 7125
 	-1   0    0    1   
 $EndComp
@@ -66,10 +66,10 @@ L Device:R_Small R8
 U 1 1 5FAB85B7
 P 4575 7375
 F 0 "R8" H 4516 7329 50  0000 R CNN
-F 1 "1k" H 4516 7420 50  0000 R CNN
+F 1 "10k" H 4516 7420 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 4575 7375 50  0001 C CNN
 F 3 "~" H 4575 7375 50  0001 C CNN
-F 4 "C21190" H 4575 7375 50  0001 C CNN "LCSC"
+F 4 "C25804" H 4575 7375 50  0001 C CNN "LCSC"
 	1    4575 7375
 	-1   0    0    1   
 $EndComp
@@ -1092,32 +1092,6 @@ $EndComp
 Wire Wire Line
 	1275 3825 1225 3825
 Connection ~ 1225 3825
-Text GLabel 2800 3975 0    50   Input ~ 0
-IO13
-$Comp
-L Connector_Generic:Conn_01x06 J10
-U 1 1 5FC2A657
-P 3000 4075
-F 0 "J10" H 3080 4067 50  0000 L CNN
-F 1 "Conn" H 3080 3976 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3000 4075 50  0001 C CNN
-F 3 "~" H 3000 4075 50  0001 C CNN
-	1    3000 4075
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR03
-U 1 1 5FC2BE00
-P 2800 4375
-F 0 "#PWR03" H 2800 4125 50  0001 C CNN
-F 1 "GND" H 2805 4202 50  0000 C CNN
-F 2 "" H 2800 4375 50  0001 C CNN
-F 3 "" H 2800 4375 50  0001 C CNN
-	1    2800 4375
-	1    0    0    -1  
-$EndComp
-Text GLabel 2800 4275 0    50   Input ~ 0
-SENSOR_VN
 $Comp
 L power:PWR_FLAG #FLG0101
 U 1 1 5FC30B8F
@@ -1132,23 +1106,23 @@ $EndComp
 $Comp
 L Connector:Conn_Coaxial J11
 U 1 1 5FC31EE2
-P 10250 3675
-F 0 "J11" H 10350 3650 50  0000 L CNN
-F 1 "Conn_Coaxial" V 10400 3725 50  0000 L CNN
-F 2 "Connector_Coaxial:SMA_Amphenol_132134_Vertical" H 10250 3675 50  0001 C CNN
-F 3 " ~" H 10250 3675 50  0001 C CNN
-	1    10250 3675
+P 9825 3675
+F 0 "J11" H 9675 3600 50  0000 L CNN
+F 1 "Conn_Coaxial" V 9900 3100 50  0000 L CNN
+F 2 "Connector_Coaxial:SMA_Molex_73251-2120_EdgeMount_Horizontal" H 9825 3675 50  0001 C CNN
+F 3 " ~" H 9825 3675 50  0001 C CNN
+	1    9825 3675
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0146
 U 1 1 5FC3451D
-P 10250 3875
-F 0 "#PWR0146" H 10250 3625 50  0001 C CNN
-F 1 "GND" H 10255 3702 50  0000 C CNN
-F 2 "" H 10250 3875 50  0001 C CNN
-F 3 "" H 10250 3875 50  0001 C CNN
-	1    10250 3875
+P 9825 3875
+F 0 "#PWR0146" H 9825 3625 50  0001 C CNN
+F 1 "GND" H 9830 3702 50  0000 C CNN
+F 2 "" H 9825 3875 50  0001 C CNN
+F 3 "" H 9825 3875 50  0001 C CNN
+	1    9825 3875
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1249,16 +1223,8 @@ Text Notes 10100 1450 0    50   ~ 0
 Do not populate Resistor!
 Text Notes 8875 1875 0    50   ~ 0
 expect about 3.5pF Stray capacitance
-Text GLabel 2800 3875 0    50   Input ~ 0
-IO4
-Text GLabel 2800 4075 0    50   Input ~ 0
-IO34
-Text GLabel 2800 4175 0    50   Input ~ 0
-IO35
 Wire Notes Line
 	4875 475  4875 6050
-Text Notes 2175 3700 0    50   ~ 0
-Auxilary connectors
 $Comp
 L power:PWR_FLAG #FLG0102
 U 1 1 5FB7A806
@@ -1345,7 +1311,7 @@ Text Notes 475  3300 0    50   ~ 0
 Reverse polarity \nprotection
 Text GLabel 850  1100 0    50   Input ~ 0
 VSUPPLY
-Text GLabel 1550 2400 2    50   Input ~ 0
+Text GLabel 2150 2400 2    50   Input ~ 0
 VSUPPLY
 Wire Wire Line
 	1150 2700 950  2700
@@ -1370,7 +1336,7 @@ U 1 1 5FB81F68
 P 2975 2650
 F 0 "U3" H 3375 2800 50  0000 L CNN
 F 1 "2460" H 3275 2500 50  0000 L CNN
-F 2 "2460" H 3625 2950 50  0001 L CNN
+F 2 "SamacSys_Parts:2460" H 3625 2950 50  0001 L CNN
 F 3 "http://www.keyelco.com/product-pdf.cfm?p=1025" H 3625 2850 50  0001 L CNN
 F 4 "Battery Holder; AA; Polypropylene; PC Mount; 1; Spring; PC Lug" H 3625 2750 50  0001 L CNN "Description"
 F 5 "14" H 3625 2650 50  0001 L CNN "Height"
@@ -1381,20 +1347,10 @@ F 9 "2460" H 3625 2250 50  0001 L CNN "Manufacturer_Part_Number"
 	1    2975 2650
 	1    0    0    -1  
 $EndComp
-Text GLabel 6725 5425 2    50   Input ~ 0
-IO35
-Text GLabel 6725 5325 2    50   Input ~ 0
-IO34
-Text GLabel 6725 3525 2    50   Input ~ 0
-IO4
 Text GLabel 6725 5225 2    50   Input ~ 0
 32K_XN
 Text GLabel 6725 5125 2    50   Input ~ 0
 32K_XP
-Text GLabel 5525 3425 0    50   Input ~ 0
-SENSOR_VN
-Text GLabel 6725 3825 2    50   Input ~ 0
-IO13
 NoConn ~ 5525 4325
 NoConn ~ 5525 4425
 $Comp
@@ -1627,55 +1583,99 @@ Reverse polarity protection. \nRDSon (VGS = -2.5V) = 60mOhm)
 Text Notes 4225 2675 0    50   ~ 0
 Shall consume \nless then 100nA
 $Comp
-L Device:C_Small C?
+L Device:C_Small C12
 U 1 1 5FC2AFEC
-P 9875 3775
-F 0 "C?" H 9783 3729 50  0000 R CNN
-F 1 "dnp" H 9783 3820 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9875 3775 50  0001 C CNN
-F 3 "~" H 9875 3775 50  0001 C CNN
-F 4 "" H 9875 3775 50  0001 C CNN "LCSC"
-	1    9875 3775
+P 10350 3650
+F 0 "C12" H 10300 3575 50  0000 R CNN
+F 1 "dnp" H 10275 3700 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10350 3650 50  0001 C CNN
+F 3 "~" H 10350 3650 50  0001 C CNN
+F 4 "" H 10350 3650 50  0001 C CNN "LCSC"
+	1    10350 3650
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	8550 4175 8400 4175
 $Comp
-L Device:L_Small L?
+L Device:L_Small L2
 U 1 1 5FC42B81
-P 9775 3675
-F 0 "L?" V 9960 3675 50  0000 C CNN
-F 1 "0R" V 9869 3675 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9775 3675 50  0001 C CNN
-F 3 "~" H 9775 3675 50  0001 C CNN
-F 4 "C21189" V 9775 3675 50  0001 C CNN "LCSC"
-	1    9775 3675
+P 10250 3550
+F 0 "L2" V 10435 3550 50  0000 C CNN
+F 1 "0R" V 10344 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 10250 3550 50  0001 C CNN
+F 3 "~" H 10250 3550 50  0001 C CNN
+F 4 "C21189" V 10250 3550 50  0001 C CNN "LCSC"
+	1    10250 3550
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C_Small C?
+L Device:C_Small C11
 U 1 1 5FC4504E
-P 9675 3775
-F 0 "C?" H 9850 3800 50  0000 R CNN
-F 1 "dnp" H 9875 3725 50  0000 R CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9675 3775 50  0001 C CNN
-F 3 "~" H 9675 3775 50  0001 C CNN
-F 4 "" H 9675 3775 50  0001 C CNN "LCSC"
-	1    9675 3775
+P 10150 3650
+F 0 "C11" H 10350 3675 50  0000 R CNN
+F 1 "dnp" H 10350 3600 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 10150 3650 50  0001 C CNN
+F 3 "~" H 10150 3650 50  0001 C CNN
+F 4 "" H 10150 3650 50  0001 C CNN "LCSC"
+	1    10150 3650
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	9550 3675 9675 3675
-Connection ~ 9675 3675
-Wire Wire Line
-	9875 3675 10050 3675
-Connection ~ 9875 3675
-Wire Wire Line
-	10250 3875 9875 3875
-Connection ~ 10250 3875
-Wire Wire Line
-	9875 3875 9675 3875
-Connection ~ 9875 3875
 Text Notes -850 1200 0    50   ~ 0
 Ferit  zu Störunterdrückung. 
+Text Notes 2175 3700 0    50   ~ 0
+Auxilary connectors
+NoConn ~ 6725 3525
+NoConn ~ 6725 3825
+NoConn ~ 6725 5325
+NoConn ~ 6725 5425
+NoConn ~ 5525 3425
+$Comp
+L Device:Ferrite_Bead_Small FB1
+U 1 1 5FCB2F22
+P 1775 2400
+F 0 "FB1" V 1538 2400 50  0000 C CNN
+F 1 "Ferrite_Bead_Small" V 1625 2525 50  0000 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" V 1705 2400 50  0001 C CNN
+F 3 "~" H 1775 2400 50  0001 C CNN
+F 4 "C1017" H 1775 2400 50  0001 C CNN "LCSC"
+	1    1775 2400
+	0    1    1    0   
+$EndComp
+Connection ~ 1550 2400
+Wire Wire Line
+	1550 2400 1675 2400
+Wire Wire Line
+	1875 2400 2150 2400
+Wire Wire Line
+	9550 3675 9625 3675
+Wire Wire Line
+	9625 3675 9625 3550
+Wire Wire Line
+	9625 3550 10150 3550
+Connection ~ 9625 3675
+Connection ~ 10150 3550
+$Comp
+L power:GND #PWR0148
+U 1 1 5FD64FE0
+P 10150 3750
+F 0 "#PWR0148" H 10150 3500 50  0001 C CNN
+F 1 "GND" H 10155 3577 50  0000 C CNN
+F 2 "" H 10150 3750 50  0001 C CNN
+F 3 "" H 10150 3750 50  0001 C CNN
+	1    10150 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0149
+U 1 1 5FD65447
+P 10350 3750
+F 0 "#PWR0149" H 10350 3500 50  0001 C CNN
+F 1 "GND" H 10355 3577 50  0000 C CNN
+F 2 "" H 10350 3750 50  0001 C CNN
+F 3 "" H 10350 3750 50  0001 C CNN
+	1    10350 3750
+	1    0    0    -1  
+$EndComp
+Text Notes 10350 3550 0    50   ~ 0
+PCB Antenna
 $EndSCHEMATC

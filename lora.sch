@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "Lora Vision (as Sensor or Gateway)"
+Date "2020-12-08"
+Rev "v1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1845,4 +1845,6 @@ F 3 "" H 4125 2925 50  0001 C CNN
 	1    4125 2925
 	1    0    0    -1  
 $EndComp
+Text Notes 625  -150 0    50   ~ 0
+replace:\n220uF \nand L1 22uH    \nas not in Stock currently!
 $EndSCHEMATC

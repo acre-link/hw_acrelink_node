@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
+Title "Lora Vision (as Sensor or Gateway)"
+Date "2020-12-08"
+Rev "v1.0"
 Comp ""
 Comment1 ""
 Comment2 ""
@@ -1620,8 +1620,6 @@ F 4 "" H 10150 3650 50  0001 C CNN "LCSC"
 	1    10150 3650
 	-1   0    0    1   
 $EndComp
-Text Notes -850 1200 0    50   ~ 0
-Ferit  zu Störunterdrückung. 
 Text Notes 2175 3700 0    50   ~ 0
 Auxilary connectors
 NoConn ~ 5525 3425
@@ -1824,10 +1822,10 @@ Wire Wire Line
 Text Notes 6800 3350 0    50   ~ 0
 floating for flashing
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0150
 U 1 1 5FD14806
 P 2700 2900
-F 0 "#PWR?" H 2700 2750 50  0001 C CNN
+F 0 "#PWR0150" H 2700 2750 50  0001 C CNN
 F 1 "VDD" H 2715 3073 50  0000 C CNN
 F 2 "" H 2700 2900 50  0001 C CNN
 F 3 "" H 2700 2900 50  0001 C CNN
@@ -1837,10 +1835,10 @@ $EndComp
 Text Notes 2400 3075 0    50   ~ 0
 Spike \nLoad\nBuffer
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0151
 U 1 1 5FD1B773
 P 4125 2925
-F 0 "#PWR?" H 4125 2675 50  0001 C CNN
+F 0 "#PWR0151" H 4125 2675 50  0001 C CNN
 F 1 "GND" H 4130 2752 50  0000 C CNN
 F 2 "" H 4125 2925 50  0001 C CNN
 F 3 "" H 4125 2925 50  0001 C CNN

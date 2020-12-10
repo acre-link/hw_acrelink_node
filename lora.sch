@@ -1016,7 +1016,7 @@ F 0 "C4" H 3493 1296 50  0000 L CNN
 F 1 "220u" H 3493 1205 50  0000 L CNN
 F 2 "Capacitor_SMD:CP_Elec_6.3x7.7" H 3413 1100 50  0001 C CNN
 F 3 "~" H 3375 1250 50  0001 C CNN
-F 4 "C127327" H 3375 1250 50  0001 C CNN "LCSC"
+F 4 "C127968" H 3375 1250 50  0001 C CNN "LCSC"
 	1    3375 1250
 	1    0    0    -1  
 $EndComp
@@ -1823,6 +1823,4 @@ F 3 "" H 4125 2925 50  0001 C CNN
 	1    4125 2925
 	1    0    0    -1  
 $EndComp
-Text Notes 625  -150 0    50   ~ 0
-replace:\n220uF \nand L1 22uH    \nas not in Stock currently!
 $EndSCHEMATC

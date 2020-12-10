@@ -18,3 +18,9 @@ https://de.aliexpress.com/store/915786
 
 Links:
 https://github.com/cernohorsky/LoRa-Node    PCB Antenna Design
+
+
+
+
+Stecker one wire    nach links an die kante
+

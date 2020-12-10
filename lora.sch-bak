@@ -1845,4 +1845,6 @@ F 3 "" H 4125 2925 50  0001 C CNN
 	1    4125 2925
 	1    0    0    -1  
 $EndComp
+Text Notes 625  -150 0    50   ~ 0
+replace:\n220uF \nand L1 22uH    \nas not in Stock currently!
 $EndSCHEMATC

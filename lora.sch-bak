@@ -133,7 +133,7 @@ U 1 1 5FACDB08
 P 1350 7450
 F 0 "J2" H 1430 7492 50  0000 L CNN
 F 1 "Humidity" H 1430 7401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1350 7450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 1350 7450 50  0001 C CNN
 F 3 "~" H 1350 7450 50  0001 C CNN
 	1    1350 7450
 	1    0    0    -1  
@@ -215,7 +215,7 @@ U 1 1 5FAD9D5E
 P 750 2500
 F 0 "J1" H 750 2300 50  0000 C CNN
 F 1 "Conn_01x02" V 875 2450 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 750 2500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Horizontal" H 750 2500 50  0001 C CNN
 F 3 "~" H 750 2500 50  0001 C CNN
 	1    750  2500
 	-1   0    0    1   
@@ -674,7 +674,7 @@ U 1 1 5FACD2CF
 P 2725 7450
 F 0 "J3" H 2805 7492 50  0000 L CNN
 F 1 "Temp" H 2805 7401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2725 7450 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 2725 7450 50  0001 C CNN
 F 3 "~" H 2725 7450 50  0001 C CNN
 	1    2725 7450
 	1    0    0    -1  

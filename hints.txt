@@ -21,6 +21,8 @@ https://github.com/cernohorsky/LoRa-Node    PCB Antenna Design
 
 
 
-
-Stecker one wire    nach links an die kante
-
+For 2nd Version:
+- Remove U2 Reference on Backside
+- Print possible Batteries on Backside Silkscreen:      LifePo4 or Lithium-Thionyl-Chlorid      no LiIon as 4.2V would most likely kill the ICs!
+- Fix wrong/missing GND on input terminal
+- Boot Pin select normally open solder jumper. 

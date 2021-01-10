@@ -22,8 +22,12 @@ https://github.com/cernohorsky/LoRa-Node    PCB Antenna Design
 
 
 For 2nd Version:
-- Remove U2 Reference on Backside
+- Remove U3 Reference on Backside
 - Print possible Batteries on Backside Silkscreen:      LifePo4 or Lithium-Thionyl-Chlorid      no LiIon as 4.2V would most likely kill the ICs!
+- Big + - DC Connector Polarity.  + Voltrage Range. DC. 
 - Fix wrong/missing GND on input terminal
 - Boot Pin select normally open solder jumper.
 - vdd selector position  blocks battery enclosure.  Move a little bit.  
+- Remove 10k Pulldown on RFM reset line. (Due to sleep current)
+- Add 10k Pullups on SPI  MISO, MOSI, SCK and CS for sleep current. 
+

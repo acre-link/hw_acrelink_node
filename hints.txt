@@ -30,4 +30,5 @@ For 2nd Version:
 - vdd selector position  blocks battery enclosure.  Move a little bit.  
 - Remove 10k Pulldown on RFM reset line. (Due to sleep current)
 - Add 10k Pullups on SPI  MISO, MOSI, SCK and CS for sleep current. 
+- OneWire Bus Pullups und  ESD Schutz?
 

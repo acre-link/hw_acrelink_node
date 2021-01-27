@@ -14,6 +14,8 @@ https://www.metergroup.com/de/environment/
 https://de.aliexpress.com/item/32750933038.html?spm=a2g0o.productlist.0.0.62fa2b2dD94RVC&algo_pvid=56dd73b6-6484-4bd3-be9a-3d29279feaf3&algo_expid=56dd73b6-6484-4bd3-be9a-3d29279feaf3-32&btsid=2100bddb16056484973607092e316c&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
 https://de.aliexpress.com/store/915786
 
+https://www.ugt-online.de/produkte/bodenkunde/bodenfeuchtetemperaturleitfaehigkeit/sm150t/
+https://www.delta-t.co.uk/product/sm150t/
 
 
 Links:
@@ -31,6 +33,10 @@ For 2nd Version:
 - Remove 10k Pulldown on RFM reset line. (Due to sleep current)
 - Add 10k Pullups on SPI  MISO, MOSI, SCK and CS for sleep current. 
 - OneWire Bus Pullups und  ESD Schutz?   JLCPCB: ESD Dioden: C233436    100Ohm Widerstand zum Controller. 
+- Stecker zum flashen 
+- Sim Modul needs 4V. Design the power supply for that! 
+- ESP needs at least 2.3V  Check when Sensors stop working. Cold Temperature. Battery in Freezer and Scope to measure Voltage!
 https://www.digikey.de/en/articles/protecting-inputs-in-digital-electronics
 https://www.maximintegrated.com/en/design/technical-documents/tutorials/1/148.html   
+
 

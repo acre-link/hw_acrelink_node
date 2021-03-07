@@ -36,9 +36,10 @@ For 2nd Version:
 - OneWire Bus Pullups und  ESD Schutz?   JLCPCB: ESD Dioden: C233436    100Ohm Widerstand zum Controller. 
 - Stecker zum flashen 
 - Sim Modul needs 4V. Design the power supply for that! 
+- Add reset line to SIM-800
 - ESP needs at least 2.3V  Check when Sensors stop working. Cold Temperature. Battery in Freezer and Scope to measure Voltage!
 - Consider a Boost converter? TPS61322  <= Or Booster only for Sensors!
-- LogicLevel converter SIM800! 
+- LogicLevel converter SIM800!    Add Reset line for SIM800 via transistor.
 https://www.digikey.de/en/articles/protecting-inputs-in-digital-electronics
 https://www.maximintegrated.com/en/design/technical-documents/tutorials/1/148.html   
 

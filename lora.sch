@@ -151,8 +151,6 @@ F 3 "" H 1150 7550 50  0001 C CNN
 	1    1150 7550
 	1    0    0    -1  
 $EndComp
-Text Notes 750  700  0    50   ~ 0
-LS14500  (3.67V full at 20°C, 2.5V full at -20C and 100mA Discharge)\nEmpty at 20C: < 3.2V at 55mA Discharge, < 3.4 at 10mA Discharge)
 $Comp
 L Switch:SW_MEC_5E SW1
 U 1 1 5FACE956
@@ -1314,10 +1312,6 @@ VSUPPLY
 Text GLabel 2150 2400 2    50   Input ~ 0
 VSUPPLY
 Wire Wire Line
-	1150 2700 950  2700
-Wire Wire Line
-	950  2700 950  2500
-Wire Wire Line
 	2525 7350 1600 7350
 Wire Wire Line
 	1600 7350 1600 7150
@@ -1821,6 +1815,19 @@ F 1 "GND" H 4130 2752 50  0000 C CNN
 F 2 "" H 4125 2925 50  0001 C CNN
 F 3 "" H 4125 2925 50  0001 C CNN
 	1    4125 2925
+	1    0    0    -1  
+$EndComp
+Text Notes 750  700  0    50   ~ 0
+LS14500  (3.67V full at 20°C, 2.5V full at -20C and 100mA Discharge)\nEmpty at 20C: < 3.2V at 55mA Discharge, < 3.4 at 10mA Discharge)
+$Comp
+L power:GND #PWR?
+U 1 1 6137C0D3
+P 950 2500
+F 0 "#PWR?" H 950 2250 50  0001 C CNN
+F 1 "GND" H 955 2327 50  0000 C CNN
+F 2 "" H 950 2500 50  0001 C CNN
+F 3 "" H 950 2500 50  0001 C CNN
+	1    950  2500
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

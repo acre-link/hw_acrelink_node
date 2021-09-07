@@ -35,7 +35,8 @@ For 2nd Version:
 - Add 10k Pullups on SPI  MISO, MOSI, SCK and CS for sleep current. 
 - OneWire Bus Pullups und  ESD Schutz?   JLCPCB: ESD Dioden: C233436    100Ohm Widerstand zum Controller. 
 - ESP needs at least 2.3V  Check when Sensors stop working. Cold Temperature. Battery in Freezer and Scope to measure Voltage!
-- 5V Boost converter? Switchable mit MOSET TPS61322  <= Or Booster only for Sensors: 5V ME2108C33M5G C236790 with inductor C492263!  For humidity sensor.  
+- 5V Boost converter? Switchable mit MOSET TPS61322  <= Or Booster only for Sensors: 5V ME2108C33M5G C236790 with inductor C492263!  For humidity sensor.
+- Test ADC pins! Sensor_VP seems to be complicated  
 - Analog Input 0-2V humidity . 
 - Remove  JP2  leave port open.
 - Tune antenna for 868MHz.   

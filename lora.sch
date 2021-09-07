@@ -1319,38 +1319,10 @@ $EndComp
 Text Notes 5525 2475 0    50   ~ 0
 https://www.youtube.com/watch?v=LY-1DHTxRAk\ncheck for pin assignment!
 NoConn ~ 6725 3325
-Text Notes 7650 3750 0    50   ~ 0
-High \nduring \nBoot
 Text Notes 5475 4825 1    50   ~ 0
 These 6 Pins are\nused for the\ninternal flash! 
 NoConn ~ 5525 4525
 NoConn ~ 5525 4625
-$Comp
-L power:VDD #PWR06
-U 1 1 5FD0859A
-P 7550 3725
-F 0 "#PWR06" H 7550 3575 50  0001 C CNN
-F 1 "VDD" H 7565 3898 50  0000 C CNN
-F 2 "" H 7550 3725 50  0001 C CNN
-F 3 "" H 7550 3725 50  0001 C CNN
-	1    7550 3725
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP2
-U 1 1 5FD08A69
-P 7300 3725
-F 0 "JP2" H 7400 3825 50  0000 C CNN
-F 1 "Bridged" H 7350 3600 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 7300 3725 50  0001 C CNN
-F 3 "~" H 7300 3725 50  0001 C CNN
-	1    7300 3725
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 3725 6725 3725
-Wire Wire Line
-	7550 3725 7450 3725
 Text Notes 6800 3350 0    50   ~ 0
 floating for flashing
 $Comp
@@ -1631,4 +1603,5 @@ Wire Wire Line
 Connection ~ 1125 7450
 Wire Wire Line
 	1125 7450 1100 7450
+NoConn ~ 6725 3725
 $EndSCHEMATC

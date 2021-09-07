@@ -744,7 +744,7 @@ F 3 "" H 1325 5650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4375 1525 4500 1525
+	4375 1525 4425 1525
 Wire Notes Line
 	3225 6050 3225 7800
 Wire Notes Line
@@ -1319,38 +1319,10 @@ $EndComp
 Text Notes 5525 2475 0    50   ~ 0
 https://www.youtube.com/watch?v=LY-1DHTxRAk\ncheck for pin assignment!
 NoConn ~ 6725 3325
-Text Notes 7650 3750 0    50   ~ 0
-High \nduring \nBoot
 Text Notes 5475 4825 1    50   ~ 0
 These 6 Pins are\nused for the\ninternal flash! 
 NoConn ~ 5525 4525
 NoConn ~ 5525 4625
-$Comp
-L power:VDD #PWR06
-U 1 1 5FD0859A
-P 7550 3725
-F 0 "#PWR06" H 7550 3575 50  0001 C CNN
-F 1 "VDD" H 7565 3898 50  0000 C CNN
-F 2 "" H 7550 3725 50  0001 C CNN
-F 3 "" H 7550 3725 50  0001 C CNN
-	1    7550 3725
-	1    0    0    -1  
-$EndComp
-$Comp
-L Jumper:SolderJumper_2_Bridged JP2
-U 1 1 5FD08A69
-P 7300 3725
-F 0 "JP2" H 7400 3825 50  0000 C CNN
-F 1 "Bridged" H 7350 3600 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_Pad1.0x1.5mm" H 7300 3725 50  0001 C CNN
-F 3 "~" H 7300 3725 50  0001 C CNN
-	1    7300 3725
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7150 3725 6725 3725
-Wire Wire Line
-	7550 3725 7450 3725
 Text Notes 6800 3350 0    50   ~ 0
 floating for flashing
 $Comp
@@ -1570,10 +1542,10 @@ Connection ~ 8350 3675
 Wire Wire Line
 	8350 3675 8550 3675
 $Comp
-L Device:R_Small R?
+L Device:R_Small R20
 U 1 1 614025B8
 P 2575 7125
-F 0 "R?" V 2475 7150 50  0000 C CNN
+F 0 "R20" V 2475 7150 50  0000 C CNN
 F 1 "4k7" V 2680 7125 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2575 7125 50  0001 C CNN
 F 3 "~" H 2575 7125 50  0001 C CNN
@@ -1582,10 +1554,10 @@ F 4 "C23162" H 2575 7125 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R?
+L Device:R_Small R18
 U 1 1 61403C1F
 P 850 7275
-F 0 "R?" V 750 7300 50  0000 C CNN
+F 0 "R18" V 750 7300 50  0000 C CNN
 F 1 "4k7" V 925 7275 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 850 7275 50  0001 C CNN
 F 3 "~" H 850 7275 50  0001 C CNN
@@ -1594,10 +1566,10 @@ F 4 "C23162" H 850 7275 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0141
 U 1 1 6140430D
 P 2675 7125
-F 0 "#PWR?" H 2675 6975 50  0001 C CNN
+F 0 "#PWR0141" H 2675 6975 50  0001 C CNN
 F 1 "VDD" H 2690 7298 50  0000 C CNN
 F 2 "" H 2675 7125 50  0001 C CNN
 F 3 "" H 2675 7125 50  0001 C CNN
@@ -1605,10 +1577,10 @@ F 3 "" H 2675 7125 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR0142
 U 1 1 61405B69
 P 750 7275
-F 0 "#PWR?" H 750 7125 50  0001 C CNN
+F 0 "#PWR0142" H 750 7125 50  0001 C CNN
 F 1 "VDD" H 765 7448 50  0000 C CNN
 F 2 "" H 750 7275 50  0001 C CNN
 F 3 "" H 750 7275 50  0001 C CNN
@@ -1631,4 +1603,23 @@ Wire Wire Line
 Connection ~ 1125 7450
 Wire Wire Line
 	1125 7450 1100 7450
+NoConn ~ 6725 3725
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 61424CD0
+P 4125 1325
+F 0 "#FLG?" H 4125 1400 50  0001 C CNN
+F 1 "PWR_FLAG" H 4125 1498 50  0000 C CNN
+F 2 "" H 4125 1325 50  0001 C CNN
+F 3 "~" H 4125 1325 50  0001 C CNN
+	1    4125 1325
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4125 1325 4425 1325
+Wire Wire Line
+	4425 1325 4425 1525
+Connection ~ 4425 1525
+Wire Wire Line
+	4425 1525 4500 1525
 $EndSCHEMATC

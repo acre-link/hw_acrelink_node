@@ -37,11 +37,13 @@ For 2nd Version:
 - ESP needs at least 2.3V  Check when Sensors stop working. Cold Temperature. Battery in Freezer and Scope to measure Voltage!
 - 5V Boost converter? Switchable mit MOSET TPS61322  <= Or Booster only for Sensors: 5V ME2108C33M5G C236790 with inductor C492263!  For humidity sensor.
 - Test ADC pins! Sensor_VP seems to be complicated  
-- Analog Input 0-2V humidity . 
+- Analog Input 0-2V humidity .   ESD protection?
 - Remove  JP2  leave port open.
 - Tune antenna for 868MHz.   
 - Antennenbefestigungsstege schmaler machen. 
 - ADC with battery supply.  ESP32.   Reference voltage?       Divide input sensor voltage?
+- add reference diode for comparison inputs? 
+- Current measurement  solder jumpler with diode bridge?
 
 
 https://www.digikey.de/en/articles/protecting-inputs-in-digital-electronics

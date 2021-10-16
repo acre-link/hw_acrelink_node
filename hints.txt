@@ -44,6 +44,7 @@ For 2nd Version:
 - ADC with battery supply.  ESP32.   Reference voltage?       Divide input sensor voltage?
 - add reference diode for comparison inputs? 
 - Current measurement  solder jumpler with diode bridge?
+- One Wire Supply Mosfet does not work. Remove or fix!  Not essential. 
 
 
 https://www.digikey.de/en/articles/protecting-inputs-in-digital-electronics

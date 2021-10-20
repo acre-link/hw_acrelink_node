@@ -127,30 +127,8 @@ F 3 "" H 5600 1750 50  0001 C CNN
 	1    5600 1750
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x03 J2
-U 1 1 5FACDB08
-P 1350 7450
-F 0 "J2" H 1430 7492 50  0000 L CNN
-F 1 "Humidity" H 1430 7401 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Horizontal" H 1350 7450 50  0001 C CNN
-F 3 "~" H 1350 7450 50  0001 C CNN
-	1    1350 7450
-	1    0    0    -1  
-$EndComp
 Text Notes 525  6150 0    50   ~ 0
 One Wire Connector
-$Comp
-L power:GND #PWR0111
-U 1 1 5FACDB0F
-P 1150 7550
-F 0 "#PWR0111" H 1150 7300 50  0001 C CNN
-F 1 "GND" H 1155 7377 50  0000 C CNN
-F 2 "" H 1150 7550 50  0001 C CNN
-F 3 "" H 1150 7550 50  0001 C CNN
-	1    1150 7550
-	1    0    0    -1  
-$EndComp
 $Comp
 L Switch:SW_MEC_5E SW1
 U 1 1 5FACE956
@@ -172,28 +150,6 @@ F 1 "GND" H 1130 4427 50  0000 C CNN
 F 2 "" H 1125 4600 50  0001 C CNN
 F 3 "" H 1125 4600 50  0001 C CNN
 	1    1125 4600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x04 J8
-U 1 1 5FAD2011
-P 9900 5800
-F 0 "J8" H 9980 5792 50  0000 L CNN
-F 1 "SIM800" H 9980 5701 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 9900 5800 50  0001 C CNN
-F 3 "~" H 9900 5800 50  0001 C CNN
-	1    9900 5800
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0113
-U 1 1 5FAD2017
-P 9700 6000
-F 0 "#PWR0113" H 9700 5750 50  0001 C CNN
-F 1 "GND" H 9705 5827 50  0000 C CNN
-F 2 "" H 9700 6000 50  0001 C CNN
-F 3 "" H 9700 6000 50  0001 C CNN
-	1    9700 6000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -308,7 +264,7 @@ F 3 "" H 5600 1050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 6350 1250 2    50   Input ~ 0
-GPS_MOSFET_SWITCH
+UART2_MOSFET_SWITCH
 Text Notes 5775 1275 0    50   ~ 0
 G
 Text Notes 5600 1125 0    50   ~ 0
@@ -359,8 +315,6 @@ F 4 "C22775" H 6250 1250 50  0001 C CNN "LCSC"
 $EndComp
 Text Notes 6350 1175 0    50   ~ 0
 Pull to GND to Switch On\nLeave floating to Switch Off
-Text Notes 6175 1725 0    50   ~ 0
-Works properly above 2.5V VDD! 
 Text Notes 6375 1550 0    50   ~ 0
 0.1xVDD minium guaranteed \nvoltage from ESP32. \nHow low with no load?
 $Comp
@@ -533,33 +487,25 @@ $EndComp
 $Comp
 L power:GND #PWR0130
 U 1 1 5FB4341E
-P 4575 7475
-F 0 "#PWR0130" H 4575 7225 50  0001 C CNN
-F 1 "GND" H 4580 7302 50  0000 C CNN
-F 2 "" H 4575 7475 50  0001 C CNN
-F 3 "" H 4575 7475 50  0001 C CNN
-	1    4575 7475
+P 4575 7500
+F 0 "#PWR0130" H 4575 7250 50  0001 C CNN
+F 1 "GND" H 4580 7327 50  0000 C CNN
+F 2 "" H 4575 7500 50  0001 C CNN
+F 3 "" H 4575 7500 50  0001 C CNN
+	1    4575 7500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	4575 7275 4575 7250
-Wire Wire Line
-	4575 7250 4800 7250
 Connection ~ 4575 7250
 Wire Wire Line
 	4575 7250 4575 7225
-Text GLabel 4800 7250 2    50   Input ~ 0
+Text GLabel 5050 7250 2    50   Input ~ 0
 VDD_SENSE
 Text GLabel 5325 6825 2    50   Input ~ 0
 VDD_SENSE_MOSFET_SWITCH
 Text Notes 4875 7175 0    50   ~ 0
 ESP32 Reference voltage\nis around 1100mV. \n
-Text GLabel 1100 7450 0    50   Input ~ 0
-ONEWIRE2_DATA
-Text GLabel 9700 5800 0    50   Input ~ 0
-UART1_RX
-Text GLabel 9700 5900 0    50   Input ~ 0
-UART1_TX
 Text GLabel 8300 3975 0    50   Input ~ 0
 SPI_CS
 Text GLabel 8300 3875 0    50   Input ~ 0
@@ -568,7 +514,7 @@ Text GLabel 8300 3775 0    50   Input ~ 0
 SPI_MOSI
 Text GLabel 8300 3675 0    50   Input ~ 0
 SPI_SCK
-Text GLabel 8550 4175 0    50   Input ~ 0
+Text GLabel 8375 4175 0    50   Input ~ 0
 RFM_RST
 Text GLabel 9550 4375 2    50   Input ~ 0
 RFM_DIO0
@@ -620,21 +566,6 @@ F 3 "~" H 2725 7450 50  0001 C CNN
 	1    2725 7450
 	1    0    0    -1  
 $EndComp
-Text Notes 9075 5400 0    50   ~ 0
-SIM800 requires up to 2A in \nburst mode and 3.4V to 4.4V
-$Comp
-L power:VDD #PWR0134
-U 1 1 5FB12BE1
-P 9700 5700
-F 0 "#PWR0134" H 9700 5550 50  0001 C CNN
-F 1 "VDD" H 9715 5873 50  0000 C CNN
-F 2 "" H 9700 5700 50  0001 C CNN
-F 3 "" H 9700 5700 50  0001 C CNN
-	1    9700 5700
-	1    0    0    -1  
-$EndComp
-Text Notes 5750 1900 0    50   ~ 0
-UBLOX Neo 6: 2.7 - 3.6V
 $Comp
 L Connector_Generic:Conn_01x03 J5
 U 1 1 5FB16DFA
@@ -755,10 +686,6 @@ Wire Notes Line
 	7925 475  7925 6525
 Text Notes 7975 2575 0    50   ~ 0
 Lora
-Text Notes 7950 5000 0    50   ~ 0
-Cellular Network
-Text Notes 4925 600  0    50   ~ 0
-GPS switchable 
 Wire Notes Line
 	475  6050 6975 6050
 NoConn ~ 9550 4275
@@ -882,7 +809,7 @@ Wire Wire Line
 Connection ~ 9950 1575
 Wire Wire Line
 	9950 1575 9500 1575
-Text Notes 10100 1450 0    50   ~ 0
+Text Notes 10075 1425 0    50   ~ 0
 Do not populate Resistor!
 Text Notes 8875 1875 0    50   ~ 0
 expect about 3.5pF Stray capacitance
@@ -898,11 +825,6 @@ Wire Wire Line
 	1600 7150 1225 7150
 Wire Wire Line
 	1225 7150 1225 7050
-Wire Wire Line
-	1150 7350 1150 7150
-Wire Wire Line
-	1150 7150 1225 7150
-Connection ~ 1225 7150
 $Comp
 L SamacSys_Parts:2460 U3
 U 1 1 5FB81F68
@@ -973,8 +895,6 @@ F 4 "C14663" H 5000 3800 50  0001 C CNN "LCSC"
 	1    5000 3800
 	-1   0    0    1   
 $EndComp
-Text GLabel 6725 5425 2    50   Input ~ 0
-VDD_SENSOR_MOSFET_SWITCH
 $Comp
 L power:GND #PWR0137
 U 1 1 5FB19D69
@@ -1009,14 +929,10 @@ F 4 "C15850" H 5375 3825 50  0001 C CNN "LCSC"
 	1    5375 3825
 	-1   0    0    1   
 $EndComp
-Text GLabel 6725 5325 2    50   Input ~ 0
+Text GLabel 9625 5350 2    50   Input ~ 0
 VDD_SENSE_MOSFET_SWITCH
-Text GLabel 5525 3325 0    50   Input ~ 0
-VDD_SENSE
 Text GLabel 6725 3825 2    50   Input ~ 0
-UART1_TX
-Text GLabel 6725 3925 2    50   Input ~ 0
-UART1_RX
+VDD_SENSE
 Text GLabel 6725 4825 2    50   Input ~ 0
 ONEWIRE1_DATA
 Text GLabel 6725 4225 2    50   Input ~ 0
@@ -1027,8 +943,6 @@ Text GLabel 5525 3125 0    50   Input ~ 0
 RESET
 Text GLabel 6725 3525 2    50   Input ~ 0
 RFM_DIO0
-Text GLabel 6725 4925 2    50   Input ~ 0
-ONEWIRE2_DATA
 Text GLabel 6725 4025 2    50   Input ~ 0
 RFM_RST
 Text GLabel 6725 4725 2    50   Input ~ 0
@@ -1047,8 +961,8 @@ Text GLabel 6725 4525 2    50   Input ~ 0
 I2C_SDA
 Text GLabel 6725 4625 2    50   Input ~ 0
 I2C_SCL
-Text GLabel 6725 5025 2    50   Input ~ 0
-GPS_MOSFET_SWITCH
+Text GLabel 9625 5650 2    50   Input ~ 0
+UART2_MOSFET_SWITCH
 Text GLabel 6725 3125 2    50   Input ~ 0
 PRG_JP
 $Comp
@@ -1075,7 +989,7 @@ F 3 "" H 6125 2925 50  0001 C CNN
 $EndComp
 Text GLabel 4375 1525 0    50   Input ~ 0
 VBATT
-Text GLabel 4325 2425 2    50   Input ~ 0
+Text GLabel 4600 2425 2    50   Input ~ 0
 VBATT
 $Comp
 L power:GND #PWR0109
@@ -1115,29 +1029,25 @@ Wire Notes Line
 $Comp
 L Transistor_FET:AO3401A Q5
 U 1 1 5FBD2B0A
-P 4125 2525
-F 0 "Q5" V 4467 2525 50  0000 C CNN
-F 1 "AO3401A" V 4376 2525 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 4325 2450 50  0001 L CIN
-F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 4125 2525 50  0001 L CNN
-F 4 "C15127" H 4125 2525 50  0001 C CNN "LCSC"
-	1    4125 2525
+P 4400 2525
+F 0 "Q5" V 4742 2525 50  0000 C CNN
+F 1 "AO3401A" V 4651 2525 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4600 2450 50  0001 L CIN
+F 3 "http://www.aosmd.com/pdfs/datasheet/AO3401A.pdf" H 4400 2525 50  0001 L CNN
+F 4 "C15127" H 4400 2525 50  0001 C CNN "LCSC"
+	1    4400 2525
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	3775 2650 3925 2650
-Wire Wire Line
-	3925 2650 3925 2425
 $Comp
 L Device:R_Small R19
 U 1 1 5FBDD330
-P 4125 2825
-F 0 "R19" V 4025 2850 50  0000 C CNN
-F 1 "100k" V 4230 2825 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 4125 2825 50  0001 C CNN
-F 3 "~" H 4125 2825 50  0001 C CNN
-F 4 "C25803" H 4125 2825 50  0001 C CNN "LCSC"
-	1    4125 2825
+P 4400 2825
+F 0 "R19" V 4300 2850 50  0000 C CNN
+F 1 "100k" V 4505 2825 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 4400 2825 50  0001 C CNN
+F 3 "~" H 4400 2825 50  0001 C CNN
+F 4 "C25803" H 4400 2825 50  0001 C CNN "LCSC"
+	1    4400 2825
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -1153,7 +1063,7 @@ F 3 "" H 2700 3100 50  0001 C CNN
 $EndComp
 Text Notes 3475 3325 0    50   ~ 0
 Reverse polarity protection. \nRDSon (VGS = -2.5V) = 60mOhm)
-Text Notes 4225 2675 0    50   ~ 0
+Text Notes 4750 3125 1    50   ~ 0
 Shall consume \nless then 100nA
 $Comp
 L Device:C_Small C12
@@ -1341,12 +1251,12 @@ Spike \nLoad\nBuffer
 $Comp
 L power:GND #PWR0151
 U 1 1 5FD1B773
-P 4125 2925
-F 0 "#PWR0151" H 4125 2675 50  0001 C CNN
-F 1 "GND" H 4130 2752 50  0000 C CNN
-F 2 "" H 4125 2925 50  0001 C CNN
-F 3 "" H 4125 2925 50  0001 C CNN
-	1    4125 2925
+P 4400 2925
+F 0 "#PWR0151" H 4400 2675 50  0001 C CNN
+F 1 "GND" H 4405 2752 50  0000 C CNN
+F 2 "" H 4400 2925 50  0001 C CNN
+F 3 "" H 4400 2925 50  0001 C CNN
+	1    4400 2925
 	1    0    0    -1  
 $EndComp
 Text Notes 750  700  0    50   ~ 0
@@ -1554,18 +1464,6 @@ F 4 "C23162" H 2575 7125 50  0001 C CNN "LCSC"
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small R18
-U 1 1 61403C1F
-P 850 7275
-F 0 "R18" V 750 7300 50  0000 C CNN
-F 1 "4k7" V 925 7275 50  0000 C CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 850 7275 50  0001 C CNN
-F 3 "~" H 850 7275 50  0001 C CNN
-F 4 "C23162" H 850 7275 50  0001 C CNN "LCSC"
-	1    850  7275
-	0    1    1    0   
-$EndComp
-$Comp
 L power:VDD #PWR0141
 U 1 1 6140430D
 P 2675 7125
@@ -1576,17 +1474,6 @@ F 3 "" H 2675 7125 50  0001 C CNN
 	1    2675 7125
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:VDD #PWR0142
-U 1 1 61405B69
-P 750 7275
-F 0 "#PWR0142" H 750 7125 50  0001 C CNN
-F 1 "VDD" H 765 7448 50  0000 C CNN
-F 2 "" H 750 7275 50  0001 C CNN
-F 3 "" H 750 7275 50  0001 C CNN
-	1    750  7275
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2425 7450 2475 7450
 Wire Wire Line
@@ -1594,15 +1481,6 @@ Wire Wire Line
 Connection ~ 2475 7450
 Wire Wire Line
 	2475 7450 2525 7450
-Wire Wire Line
-	1150 7450 1125 7450
-Wire Wire Line
-	1125 7450 1125 7275
-Wire Wire Line
-	1125 7275 950  7275
-Connection ~ 1125 7450
-Wire Wire Line
-	1125 7450 1100 7450
 NoConn ~ 6725 3725
 $Comp
 L power:PWR_FLAG #FLG0101
@@ -1622,4 +1500,94 @@ Wire Wire Line
 Connection ~ 4425 1525
 Wire Wire Line
 	4425 1525 4500 1525
+Text GLabel 6725 3925 2    50   Input ~ 0
+EXT_ADC_SENSE
+Text GLabel 9625 5800 2    50   Input ~ 0
+5V_ENABLE_SWITCH
+NoConn ~ 5525 3325
+NoConn ~ 6725 5325
+NoConn ~ 6725 5425
+Text GLabel 6725 4925 2    50   Input ~ 0
+EXT_ADC_SENSE2
+Text GLabel 6725 5025 2    50   Input ~ 0
+GLOBAL_SENSE_ENABLE
+Text GLabel 9450 5350 0    50   Input ~ 0
+GLOBAL_SENSE_ENABLE
+Wire Wire Line
+	9625 5800 9625 5350
+Wire Wire Line
+	9625 5350 9450 5350
+Text GLabel 9625 5500 2    50   Input ~ 0
+VDD_SENSOR_MOSFET_SWITCH
+$Comp
+L Device:C_Small C?
+U 1 1 6172302D
+P 4850 7350
+F 0 "C?" H 4758 7304 50  0000 R CNN
+F 1 "100n" H 4758 7395 50  0000 R CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4850 7350 50  0001 C CNN
+F 3 "~" H 4850 7350 50  0001 C CNN
+F 4 "C14663" H 4850 7350 50  0001 C CNN "LCSC"
+	1    4850 7350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4575 7500 4575 7475
+Wire Wire Line
+	4850 7450 4850 7500
+Wire Wire Line
+	4850 7500 4575 7500
+Connection ~ 4575 7500
+Wire Wire Line
+	4575 7250 4850 7250
+Connection ~ 4850 7250
+Wire Wire Line
+	4850 7250 5050 7250
+$Comp
+L Jumper:SolderJumper_2_Bridged JP?
+U 1 1 6172D5B2
+P 4050 2425
+F 0 "JP?" H 4050 2525 50  0000 C CNN
+F 1 "ISense" H 4050 2325 50  0000 C CNN
+F 2 "" H 4050 2425 50  0001 C CNN
+F 3 "~" H 4050 2425 50  0001 C CNN
+	1    4050 2425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3775 2650 3900 2650
+Wire Wire Line
+	3900 2650 3900 2425
+$Comp
+L Device:R_Small R?
+U 1 1 6173CDBC
+P 8475 4275
+F 0 "R?" V 8400 4300 50  0000 C CNN
+F 1 "10k" V 8425 4450 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8475 4275 50  0001 C CNN
+F 3 "~" H 8475 4275 50  0001 C CNN
+F 4 "C25804" H 8475 4275 50  0001 C CNN "LCSC"
+	1    8475 4275
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8375 4175 8475 4175
+Connection ~ 8475 4175
+Wire Wire Line
+	8475 4175 8550 4175
+$Comp
+L power:VDD #PWR?
+U 1 1 61741728
+P 8175 4475
+F 0 "#PWR?" H 8175 4325 50  0001 C CNN
+F 1 "VDD" H 8190 4648 50  0000 C CNN
+F 2 "" H 8175 4475 50  0001 C CNN
+F 3 "" H 8175 4475 50  0001 C CNN
+	1    8175 4475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8475 4375 8475 4475
+Wire Wire Line
+	8475 4475 8175 4475
 $EndSCHEMATC

@@ -45,6 +45,7 @@ Done for 2nd Version:
 
 Todo for 2nd Version:
 - OneWire Bus Pullups und  ESD Schutz?   JLCPCB: ESD Dioden: C233436    100Ohm Widerstand zum Controller? 
+- include 5V buck for one wire supply. Check datasheet. 
 - ESP needs at least 2.3V  Check when Sensors stop working. Cold Temperature. Battery in Freezer and Scope to measure Voltage!
 - 5V Boost converter? Switchable mit MOSET TPS61322  <= Or Booster only for Sensors: 5V ME2108C33M5G C236790 with inductor C492263!  For humidity sensor.
 - Analog Input 0-2V humidity .   ESD protection?

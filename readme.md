@@ -54,5 +54,26 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 - https://www.digikey.de/en/articles/protecting-inputs-in-digital-electronics
 - https://www.maximintegrated.com/en/design/technical-documents/tutorials/1/148.html   
 - low current led for signaling transmission. 
+- Remove 32khz crystal as not required. (Tested!)
+
+
+- Pin Mapping 2nd Version, tested pins:    
+- AnalogInput1 : PIN13  GPIO14  ADC2_CH6
+- Analog Bat   : PIN16  GPIO13  ADC2_CH4 
+- AnalogInput2 : PIN11 GPIO26   ADC2_CH9
+- I2C SDA	   : PIN33 GPIO21 		 //External Connector 
+- I2C SCL 	   : PIN36  GPIO22       //External Connector
+- Switch1      : PIN27 GPIO16        //UART2_RX  shall UART be kept?
+- Switch2      : PIN28 GPIO17 		 //UART2_TX
+- 5V Buck EN   : PIN12 GPIO27 		
+- GND_OFF      : PIN8 GPIO32
+- Switch5      : PIN9 GPIO33
+
+- RFM_MISO     : PIN31  GPIO19 
+- RFM_MOSI     : PIN37  GPIO23 
+- RFM_SCK      : PIN30  GPIO18
+- RFM_CS       : PIN29  GPIO5
+- RFM_RST      : PIN23  GPIO15 
+- RFM_IRQ      : PIN26  GPIO4 
 
 

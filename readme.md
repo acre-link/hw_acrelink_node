@@ -1,28 +1,21 @@
-SIM800:
-https://lastminuteengineers.com/sim800l-gsm-module-arduino-tutorial/
-https://exploreembedded.com/wiki/Setting_up_GPRS_with_SIM800L
-
-LTE Alternative:
-https://www.raviyp.com/don-t-use-sim900-sim908-sim800-sim808-modules-in-usa-2g-sunset/
-
-
-Feuchte Sensoren:
+# Humidity Sensors:
 https://www.metergroup.com/de/environment/produkte/teros-21/
 https://www.metergroup.com/de/environment/produkte/teros-10/
 https://www.metergroup.com/de/environment/
 
 https://de.aliexpress.com/item/32750933038.html?spm=a2g0o.productlist.0.0.62fa2b2dD94RVC&algo_pvid=56dd73b6-6484-4bd3-be9a-3d29279feaf3&algo_expid=56dd73b6-6484-4bd3-be9a-3d29279feaf3-32&btsid=2100bddb16056484973607092e316c&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
 https://de.aliexpress.com/store/915786
-
 https://www.ugt-online.de/produkte/bodenkunde/bodenfeuchtetemperaturleitfaehigkeit/sm150t/
 https://www.delta-t.co.uk/product/sm150t/
-
 https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRfM3vv
 
-Links:
-https://github.com/cernohorsky/LoRa-Node    PCB Antenna Design
+## Selected sensor for hardware design:
+- https://de.aliexpress.com/item/1005001411485735.html?gatewayAdapt=glo2deu&spm=a2g0o.9042311.0.0.27424c4dQoBMf8
+- Supplyvoltage 3.6V - 30V.    Two analog outputs  0 .. 2 V  for  soil temperature and soil humidity.    ~5mA current consumption at 4V 
 
-Done for 2nd Version:
+
+# Facts and things done:
+- https://github.com/cernohorsky/LoRa-Node    PCB Antenna Design
 - Remove U3 Reference on Backside
 - Print possible Batteries on Backside Silkscreen:      LifePo4 or Lithium-Thionyl-Chlorid      no LiIon as 4.2V would most likely kill the ICs!
 - Big + - DC Connector Polarity.  + Voltrage Range. DC. 
@@ -43,7 +36,7 @@ Done for 2nd Version:
 - Remove R13 10k Pulldown on RFM reset line. (Due to sleep current)  Changed to Pull-Up Instead?
 
 
-Todo for 2nd Version:
+# Todos for 2nd Version:
 - OneWire Bus Pullups und  ESD Schutz?   JLCPCB: ESD Dioden: C233436    100Ohm Widerstand zum Controller? 
 - include 5V buck for one wire supply. Check datasheet.  Check current if voltage only on data line of DS18b20. 
   Current varies from 1 .... 6uA only for DS18B20 if VCC not connected.   Bus powered not a good idea. This would require a 5 to 3.3v ldo additonally!
@@ -56,10 +49,7 @@ Todo for 2nd Version:
 - Tune antenna for 868MHz.   
 - Antennenbefestigungsstege schmaler machen. 
 - add reference diode for comparison inputs? 
-
-
-
-https://www.digikey.de/en/articles/protecting-inputs-in-digital-electronics
-https://www.maximintegrated.com/en/design/technical-documents/tutorials/1/148.html   
+- https://www.digikey.de/en/articles/protecting-inputs-in-digital-electronics
+- https://www.maximintegrated.com/en/design/technical-documents/tutorials/1/148.html   
 
 

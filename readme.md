@@ -37,6 +37,8 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 
 
 # Todos for 2nd Version:
+- Testsetup with  5V booster, Analog Humidity and Temperature sensing, 18B20 temperature sensing.  Checking Sleep current
+
 - OneWire Bus Pullups und  ESD Schutz?   JLCPCB: ESD Dioden: C233436    100Ohm Widerstand zum Controller? 
 - include 5V buck for one wire supply. Check datasheet.  Check current if voltage only on data line of DS18b20. 
   Current varies from 1 .... 6uA only for DS18B20 if VCC not connected.   Bus powered not a good idea. This would require a 5 to 3.3v ldo additonally!
@@ -51,5 +53,6 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 - add reference diode for comparison inputs? 
 - https://www.digikey.de/en/articles/protecting-inputs-in-digital-electronics
 - https://www.maximintegrated.com/en/design/technical-documents/tutorials/1/148.html   
+- low current led for signaling transmission. 
 
 

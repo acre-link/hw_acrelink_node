@@ -42,20 +42,12 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 - low current led for signaling transmission.  Switch on by setting GPIO to GND.
 - 5V Boost converter only for Sensors: 5V ME2108C33M5G C236790 with inductor C83445! For humidity sensor.
 - mechanical on-off switch 
+- Low Current ESD protection C2830311 low leakage current!  0.08uA     12pF capacity.
+- Analog Input 0-2V humidity .  Protection ESD Diode + 1k R  
 
 # Todos for 2nd Version:
-- Low Current ESD protection or shottky to GND + VCC?  
-  C2830311   low leakage current!  0.08uA     12pF capacity.
-- OneWire Bus Pullups und  ESD Schutz?  100Ohm Widerstand zum Controller? 
-- Switchable ground for connected sensors.  N-Mosfet (AO3400A)?  Gate depletion with 10MOhm? Default is switched off. Switch pin to input during sleep.  
-
-  
-- Analog Input 0-2V humidity .  Protection ESD Diode + 1k R  
 - Tune antenna for 868MHz.   
 - Antennenbefestigungsstege schmaler machen. 
-- https://www.digikey.de/en/articles/protecting-inputs-in-digital-electronics
-- https://www.maximintegrated.com/en/design/technical-documents/tutorials/1/148.html   
-
 - Breakoff PCB with  USB-C and DC-DC Buck Converter Vin: 4.5 -> 30V. 
 
 

@@ -34,30 +34,32 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 - pin 21 / 22 could be used as outputs. Do we need I2C later?    I2C kept. 
 - Current measurement  solder jumpler with diode bridge?   No Diode but jumper.
 - Remove R13 10k Pulldown on RFM reset line. (Due to sleep current)  Changed to Pull-Up Instead?
-
+- Remove 32khz crystal as not required. (Tested!)
+- Testsetup with switchable 5V booster, Analog Humidity and Temperature sensing, 18B20 temperature sensing.  Measured Sleep current  6.5uA 
+- DS18B20 only specified down to 3V.  Might fail first during battery discharge. Replace with SHT3X or BME680 if not usable they work fine down to 2.15V! So keep external I2C connection! 
+- Check ADC input current during sleep mode!   <= No problem as input pins
+- Inputpins can be pulled low or high during sleep.  No significant current consumption << 1uA. 
+- low current led for signaling transmission.  Switch on by setting GPIO to GND.
+- 5V Boost converter only for Sensors: 5V ME2108C33M5G C236790 with inductor C83445! For humidity sensor.
 
 # Todos for 2nd Version:
-- Testsetup with  5V booster, Analog Humidity and Temperature sensing, 18B20 temperature sensing.  Checking Sleep current
-
-- OneWire Bus Pullups und  ESD Schutz?   JLCPCB: ESD Dioden: C233436    100Ohm Widerstand zum Controller? 
-- include 5V buck for one wire supply. Check datasheet.  Check current if voltage only on data line of DS18b20. 
-  Current varies from 1 .... 6uA only for DS18B20 if VCC not connected.   Bus powered not a good idea. This would require a 5 to 3.3v ldo additonally!
-  Consider switching GND with N-Mosfet (AO3400A)?  Gate depletion with 10MOhm? Check sleep current with 1 - 10MOhm to GND on an output pin! 
-  Also switch GND for  Humidity sensor?  Check ADC input current during sleep mode!   
-  Check influence of rtc_gpio_isolate and rtc_gpio_hold_dis to current consumption!
-- ESP needs at least 2.3V  Check when Sensors stop working. Cold Temperature. Battery in Freezer and Scope to measure Voltage!
-- 5V Boost converter? Switchable mit MOSET TPS61322  <= Or Booster only for Sensors: 5V ME2108C33M5G C236790 with inductor C492263!  For humidity sensor.
+- Low Current ESD protection or shottky to GND + VCC?  
+  C2830311   low leakage current!  0.08uA     12pF capacity.
+- OneWire Bus Pullups und  ESD Schutz?  100Ohm Widerstand zum Controller? 
+- Switchable ground for connected sensors.  N-Mosfet (AO3400A)?  Gate depletion with 10MOhm? Default is switched off. Switch pin to input during sleep.  
+- mechanical on-off switch 
+  
 - Analog Input 0-2V humidity .   ESD protection?
 - Tune antenna for 868MHz.   
 - Antennenbefestigungsstege schmaler machen. 
-- add reference diode for comparison inputs? 
 - https://www.digikey.de/en/articles/protecting-inputs-in-digital-electronics
 - https://www.maximintegrated.com/en/design/technical-documents/tutorials/1/148.html   
-- low current led for signaling transmission. 
-- Remove 32khz crystal as not required. (Tested!)
+
+- Breakoff PCB with  USB-C and DC-DC Buck Converter Vin: 4.5 -> 30V. 
 
 
-- Pin Mapping 2nd Version, tested pins:    
+## Pin Mapping 2nd Version, tested pins:   
+- Usefull: https://www.electroniclinic.com/esp32-wroom-32d-pinout-features-and-specifications/ 
 - AnalogInput1 : PIN13  GPIO14  ADC2_CH6
 - Analog Bat   : PIN16  GPIO13  ADC2_CH4 
 - AnalogInput2 : PIN11 GPIO26   ADC2_CH9
@@ -67,7 +69,7 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 - Switch2      : PIN28 GPIO17 		 //UART2_TX
 - 5V Buck EN   : PIN12 GPIO27 		
 - GND_OFF      : PIN8 GPIO32
-- Switch5      : PIN9 GPIO33
+- LED_Signal   : PIN9 GPIO33
 
 - RFM_MISO     : PIN31  GPIO19 
 - RFM_MOSI     : PIN37  GPIO23 

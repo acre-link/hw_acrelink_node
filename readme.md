@@ -47,7 +47,6 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 
 # Todos for 2nd Version:
 - Tune antenna for 868MHz.   
-- Antennenbefestigungsstege schmaler machen. 
 - Breakoff PCB with  USB-C and DC-DC Buck Converter Vin: 4.5 -> 30V. 
 
 

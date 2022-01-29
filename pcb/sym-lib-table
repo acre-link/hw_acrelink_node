@@ -1,3 +1,5 @@
 (sym_lib_table
   (lib (name "OWN_Parts_")(type "KiCad")(uri "C:/Users/mbetz/Documents/privat/projects/hw_kicad_lib/parts/OWN_Parts_.kicad_sym")(options "")(descr ""))
+  (lib (name "lv2842x")(type "KiCad")(uri "C:/Users/mbetz/Documents/privat/projects/hw_kicad_lib/parts/lv2842x.kicad_sym")(options "")(descr ""))
+  (lib (name "SamacSys_Parts")(type "Legacy")(uri "C:/Users/mbetz/Documents/privat/projects/hw_kicad_lib/parts/SamacSys_Parts.lib")(options "")(descr ""))
 )

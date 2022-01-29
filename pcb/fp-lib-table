@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name "OWN_Parts_")(type "KiCad")(uri "C:/Users/mbetz/Documents/privat/projects/hw_kicad_lib/parts/OWN_Parts_.pretty")(options "")(descr ""))
+  (lib (name "SamacSys_Parts")(type "KiCad")(uri "C:/Users/mbetz/Documents/privat/projects/hw_kicad_lib/parts/SamacSys_Parts.pretty")(options "")(descr ""))
 )

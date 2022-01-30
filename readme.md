@@ -1,69 +1,34 @@
-# Humidity Sensors:
-https://www.metergroup.com/de/environment/produkte/teros-21/
-https://www.metergroup.com/de/environment/produkte/teros-10/
-https://www.metergroup.com/de/environment/
+# AcreLink Node
 
-https://de.aliexpress.com/item/32750933038.html?spm=a2g0o.productlist.0.0.62fa2b2dD94RVC&algo_pvid=56dd73b6-6484-4bd3-be9a-3d29279feaf3&algo_expid=56dd73b6-6484-4bd3-be9a-3d29279feaf3-32&btsid=2100bddb16056484973607092e316c&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
-https://de.aliexpress.com/store/915786
-https://www.ugt-online.de/produkte/bodenkunde/bodenfeuchtetemperaturleitfaehigkeit/sm150t/
-https://www.delta-t.co.uk/product/sm150t/
-https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRfM3vv
+- Designed for a sleep current around 6 to 7 uA. 
+- ESP32
+- RFM95 Lora Module
+- 868MHz PCB antenna, can be cut off and replaced by an SMA connector
+- AA size lithium battery driven: (LS14500 Lithium-Thionyl-Chlorid or LifePo4 possible)
+- Boost converter to supply sensors with stable 5V. Can be switched off for low current sleep mode
+- External connectors for Onewire, two analog inputs and I2C including ESD protection with very low current TVS diodes
+- Sensing battery voltage. Can be disabled for low sleep current
+- Red led for signaling activity
+- Mechanical switch to select battery of external power supply 
 
-## Selected sensor for hardware design:
-- https://de.aliexpress.com/item/1005001411485735.html?gatewayAdapt=glo2deu&spm=a2g0o.9042311.0.0.27424c4dQoBMf8
-- Supplyvoltage 3.6V - 30V.    Two analog outputs  0 .. 2 V  for  soil temperature and soil humidity.    ~5mA current consumption at 4V 
-
-
-# Facts and things done:
-- https://github.com/cernohorsky/LoRa-Node    PCB Antenna Design
-- Remove U3 Reference on Backside
-- Print possible Batteries on Backside Silkscreen:      LifePo4 or Lithium-Thionyl-Chlorid      no LiIon as 4.2V would most likely kill the ICs!
-- Big + - DC Connector Polarity.  + Voltrage Range. DC. 
-- Fix wrong/missing GND on input terminal  (removed as only Battery powered now)
-- Replace Programm Jumper with "Button like reset button" 
-- vdd selector position  blocks battery enclosure. Remove DC-DC and supply select jumper    (no selector only Battery powered)
-- Add 10k Pullups on SPI  MISO, MOSI, SCK and CS for sleep current. 
-- Remove  JP2  leave port open.
-- 1 Onewire input should be sufficient remove one wire port 2. 
-- Test ADC pins! Sensor_VP seems to be complicated. Don't use them. Use working pins:  UART1_TX Pin13, UART1_RX Pin14 or Onewire2_data Pin26
-- GPS Mosfet works as expected on Pin27.  Reuse for other purpose! 
-- Remove UART 1 and use for  external voltage measurement and supply voltage measurement.
-- One Wire Supply Mosfet does not work. Remove or fix!  Not essential.   Fixed!
-- pin 34 / 35 not working as outputs. Do not use.   Usage removed
-- ADC with battery supply.  ESP32.   Reference voltage?       Divide input sensor voltage?   Done.
-- pin 21 / 22 could be used as outputs. Do we need I2C later?    I2C kept. 
-- Current measurement  solder jumpler with diode bridge?   No Diode but jumper.
-- Remove R13 10k Pulldown on RFM reset line. (Due to sleep current)  Changed to Pull-Up Instead?
-- Remove 32khz crystal as not required. (Tested!)
-- Testsetup with switchable 5V booster, Analog Humidity and Temperature sensing, 18B20 temperature sensing.  Measured Sleep current  6.5uA 
-- DS18B20 only specified down to 3V.  Might fail first during battery discharge. Replace with SHT3X or BME680 if not usable they work fine down to 2.15V! So keep external I2C connection! 
-- Check ADC input current during sleep mode!   <= No problem as input pins
-- Inputpins can be pulled low or high during sleep.  No significant current consumption << 1uA. 
-- low current led for signaling transmission.  Switch on by setting GPIO to GND.
-- 5V Boost converter only for Sensors: 5V ME2108C33M5G C236790 with inductor C83445! For humidity sensor.
-- mechanical on-off switch 
-- Low Current ESD protection C2830311 low leakage current!  0.08uA     12pF capacity.
-- Analog Input 0-2V humidity .  Protection ESD Diode + 1k R  
-- Current measurement connector. 
-- Breakoff PCB with  USB-C and DC-DC Buck Converter Vin: 4.5 -> 30V. 
-
-# Todos for 2nd Version:
- 
+- Separate removable pcb section with wide range power supply 5 - 25V,  USB-C connector and USB-UART adapter for programming
 
 
+## 3D Preview 
+![3D Preview](media/3d_front.JPG)
 
+![3D Preview](media/3d_back.jpg)
 
-## Pin Mapping 2nd Version, tested pins:   
-- Usefull: https://www.electroniclinic.com/esp32-wroom-32d-pinout-features-and-specifications/ 
+## Pin Mapping tested pins:   
+
 - AnalogInput1 : PIN13  GPIO14  ADC2_CH6
 - Analog Bat   : PIN16  GPIO13  ADC2_CH4 
 - AnalogInput2 : PIN11 GPIO26   ADC2_CH9
-- I2C SDA	   : PIN33 GPIO21 		 //External Connector 
-- I2C SCL 	   : PIN36  GPIO22       //External Connector
-- Switch1      : PIN27 GPIO16        //UART2_RX  shall UART be kept?
-- Switch2      : PIN28 GPIO17 		 //UART2_TX
+- I2C SDA	   : PIN33 GPIO21 		
+- I2C SCL 	   : PIN36  GPIO22     
+- UART2_RX     : PIN27 GPIO16        
+- UART2_TX     : PIN28 GPIO17 		 
 - 5V Buck EN   : PIN12 GPIO27 		
-- GND_OFF      : PIN8 GPIO32
 - LED_Signal   : PIN9 GPIO33
 
 - RFM_MISO     : PIN31  GPIO19 
@@ -73,4 +38,30 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 - RFM_RST      : PIN23  GPIO15 
 - RFM_IRQ      : PIN26  GPIO4 
 
+## Links
+
+### Humidity Sensors:
+https://www.metergroup.com/de/environment/produkte/teros-21/
+
+https://www.metergroup.com/de/environment/produkte/teros-10/
+
+https://www.metergroup.com/de/environment/
+
+https://de.aliexpress.com/item/32750933038.html?spm=a2g0o.productlist.0.0.62fa2b2dD94RVC&algo_pvid=56dd73b6-6484-4bd3-be9a-3d29279feaf3&algo_expid=56dd73b6-6484-4bd3-be9a-3d29279feaf3-32&btsid=2100bddb16056484973607092e316c&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
+
+https://de.aliexpress.com/store/915786
+
+https://www.ugt-online.de/produkte/bodenkunde/bodenfeuchtetemperaturleitfaehigkeit/sm150t/
+
+https://www.delta-t.co.uk/product/sm150t/
+
+https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRfM3vv
+
+- Antenna Design: https://github.com/cernohorsky/LoRa-Node  
+
+- Usefull for pin mapping: https://www.electroniclinic.com/esp32-wroom-32d-pinout-features-and-specifications/ 
+
+### Selected sensor for hardware design:
+- https://de.aliexpress.com/item/1005001411485735.html?gatewayAdapt=glo2deu&spm=a2g0o.9042311.0.0.27424c4dQoBMf8
+- Supplyvoltage 3.6V - 30V.    Two analog outputs  0 .. 2 V  for  soil temperature and soil humidity. ~5mA current consumption at 4V 
 

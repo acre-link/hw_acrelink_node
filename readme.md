@@ -44,10 +44,13 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 - mechanical on-off switch 
 - Low Current ESD protection C2830311 low leakage current!  0.08uA     12pF capacity.
 - Analog Input 0-2V humidity .  Protection ESD Diode + 1k R  
+- Current measurement connector. 
+- Breakoff PCB with  USB-C and DC-DC Buck Converter Vin: 4.5 -> 30V. 
 
 # Todos for 2nd Version:
-- Tune antenna for 868MHz.   
-- Breakoff PCB with  USB-C and DC-DC Buck Converter Vin: 4.5 -> 30V. 
+ 
+
+
 
 
 ## Pin Mapping 2nd Version, tested pins:   

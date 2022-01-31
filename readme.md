@@ -60,3 +60,8 @@ https://www.delta-t.co.uk/product/sm150t/
 https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRfM3vv
 
 - Usefull for pin mapping: https://www.electroniclinic.com/esp32-wroom-32d-pinout-features-and-specifications/ 
+
+## TODO
+- LMIC seems to require DIO1 and DIO2!  But they are not connected.   Check schematic of common esp32 lora nodes!  Details: https://github.com/matthijskooijman/arduino-lmic#dio-pins  Lora requires at least DIO0 and 1s
+- https://jackgruber.github.io/2020-04-13-ESP32-DeepSleep-and-LoraWAN-OTAA-join/  Deep sleep lorawan
+- SPI Testpoints + separate CS pin on Backside for potential SD-Card 

@@ -7,8 +7,8 @@
   (paper "A4")
   (title_block
     (title "AcreLink")
-    (date "2022-01-30")
-    (rev "v2.0")
+    (date "2022-01-31")
+    (rev "v2.1")
   )
 
   (layers

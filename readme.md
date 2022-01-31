@@ -1,5 +1,4 @@
 # AcreLink Node
-
 - Designed for a sleep current around 6 to 7 uA. 
 - ESP32
 - RFM95 Lora Module
@@ -9,6 +8,7 @@
 - External connector for Onewire, analog inputs and I2C including ESD protection with very low current TVS diodes
 - Sensing battery voltage. Can be disabled for low sleep current
 - Red led for signaling activity
+- SPI header for external connection. 
 - Mechanical switch to select battery of external power supply 
 - Separate removable pcb section with wide range power supply 5 - 25V,  USB-C connector and USB-UART adapter for programming
 
@@ -61,7 +61,8 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 
 - Usefull for pin mapping: https://www.electroniclinic.com/esp32-wroom-32d-pinout-features-and-specifications/ 
 
-## TODO
 - LMIC seems to require DIO1 and DIO2!  But they are not connected.   Check schematic of common esp32 lora nodes!  Details: https://github.com/matthijskooijman/arduino-lmic#dio-pins  Lora requires at least DIO0 and 1s
+
 - https://jackgruber.github.io/2020-04-13-ESP32-DeepSleep-and-LoraWAN-OTAA-join/  Deep sleep lorawan
-- SPI Testpoints + separate CS pin on Backside for potential SD-Card 
+
+- SPI SD-Card header  //https://www.sparkfun.com/products/544 

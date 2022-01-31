@@ -34,7 +34,8 @@
 - RFM_SCK      : PIN30  GPIO18
 - RFM_CS       : PIN29  GPIO5
 - RFM_RST      : PIN23  GPIO15 
-- RFM_IRQ      : PIN26  GPIO4 
+- RFM_IRQ/DIO0 : PIN26  GPIO4 
+- RFM_DIO1     : PIN8   GPIO32 	
 
 
 ## Links
@@ -61,8 +62,12 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 
 - Usefull for pin mapping: https://www.electroniclinic.com/esp32-wroom-32d-pinout-features-and-specifications/ 
 
-- LMIC seems to require DIO1 and DIO2!  But they are not connected.   Check schematic of common esp32 lora nodes!  Details: https://github.com/matthijskooijman/arduino-lmic#dio-pins  Lora requires at least DIO0 and 1s
+- LMIC seems to require DIO1 and DIO2!  But they are not connected.   Check schematic of common esp32 lora nodes!  Details: https://github.com/matthijskooijman/arduino-lmic#dio-pins  Lora requires at least DIO0 and DIO1
 
 - https://jackgruber.github.io/2020-04-13-ESP32-DeepSleep-and-LoraWAN-OTAA-join/  Deep sleep lorawan
 
 - SPI SD-Card header  //https://www.sparkfun.com/products/544 
+
+## TODOs (next hw version)
+ - Cutout around USB-C ?
+ - Alternative battery with more capacity: LS14500(2.6Ah), LS17500(3.6Ah) , LS26500(7.7Ah) ?    Solder directly to pcb without holder: LS [14,17,26]500CNA, TADIRAN SL360P  ?

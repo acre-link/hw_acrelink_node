@@ -11,7 +11,9 @@
 - SPI header for external connection. 
 - Mechanical switch to select battery of external power supply 
 - Separate removable pcb section with wide range power supply 5 - 25V,  USB-C connector and USB-UART adapter for programming
-
+- Enableable current measurement at GND level with 1 Ohm Resistor and low pass filtering. 
+- Switchable Onewire power, data and datapullup, I2C power and pull ups. 
+ 
 
 ## 3D Preview 
 ![3D Preview](media/3d_front.JPG)
@@ -68,6 +70,14 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 
 - SPI SD-Card header  //https://www.sparkfun.com/products/544 
 
+- DC-DC Alternative: TP6841S6
+
 ## TODOs (next hw version)
- - Cutout around USB-C ?
- - Alternative battery with more capacity: LS14500(2.6Ah), LS17500(3.6Ah) , LS26500(7.7Ah) ?    Solder directly to pcb without holder: LS [14,17,26]500CNA, TADIRAN SL360P  ?
+- Cutout around USB-C ?
+- Alternative battery with more capacity: LS14500(2.6Ah), LS17500(3.6Ah) , LS26500(7.7Ah) ?    Solder directly to pcb without holder: LS [14,17,26]500CNA, TADIRAN SL360P  ?
+
+
+ 
+ 
+ 
+ 

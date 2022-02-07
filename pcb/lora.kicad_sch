@@ -6,8 +6,8 @@
 
   (title_block
     (title "AcreLink")
-    (date "2022-02-06")
-    (rev "v2.2")
+    (date "2022-02-07")
+    (rev "v2.3")
   )
 
   (lib_symbols

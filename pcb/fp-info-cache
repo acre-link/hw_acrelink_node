@@ -1,4 +1,4 @@
-19831807475699615
+19836740160662101
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59436,6 +59436,27 @@ net tie solder jumper bridged
 0
 2
 2
+OWN_Parts_
+mouse_bite_hole_0.5
+
+
+0
+0
+0
+OWN_Parts_
+mouse_bite_hole_0.7mm
+
+
+0
+0
+0
+OWN_Parts_
+mouse_bite_hole_0.8mm
+
+
+0
+0
+0
 OWN_Parts_
 pcb_edge_2_1
 

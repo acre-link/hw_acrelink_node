@@ -46,25 +46,25 @@
 
 
 ### Oher Links for reference
-https://www.metergroup.com/de/environment/produkte/teros-21/
+- https://www.metergroup.com/de/environment/produkte/teros-21/
 
-https://www.metergroup.com/de/environment/produkte/teros-10/
+- https://www.metergroup.com/de/environment/produkte/teros-10/
 
-https://www.metergroup.com/de/environment/
+- https://www.metergroup.com/de/environment/
 
-https://de.aliexpress.com/item/32750933038.html?spm=a2g0o.productlist.0.0.62fa2b2dD94RVC&algo_pvid=56dd73b6-6484-4bd3-be9a-3d29279feaf3&algo_expid=56dd73b6-6484-4bd3-be9a-3d29279feaf3-32&btsid=2100bddb16056484973607092e316c&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
+- https://de.aliexpress.com/item/32750933038.html?spm=a2g0o.productlist.0.0.62fa2b2dD94RVC&algo_pvid=56dd73b6-6484-4bd3-be9a-3d29279feaf3&algo_expid=56dd73b6-6484-4bd3-be9a-3d29279feaf3-32&btsid=2100bddb16056484973607092e316c&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_
 
-https://de.aliexpress.com/store/915786
+- https://de.aliexpress.com/store/915786
 
-https://www.ugt-online.de/produkte/bodenkunde/bodenfeuchtetemperaturleitfaehigkeit/sm150t/
+- https://www.ugt-online.de/produkte/bodenkunde/bodenfeuchtetemperaturleitfaehigkeit/sm150t/
 
-https://www.delta-t.co.uk/product/sm150t/
+- https://www.delta-t.co.uk/product/sm150t/
 
-https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRfM3vv
+- https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRfM3vv
 
 - Usefull for pin mapping: https://www.electroniclinic.com/esp32-wroom-32d-pinout-features-and-specifications/ 
 
-- LMIC seems to require DIO1 and DIO2!  But they are not connected.   Check schematic of common esp32 lora nodes!  Details: https://github.com/matthijskooijman/arduino-lmic#dio-pins  Lora requires at least DIO0 and DIO1
+- https://github.com/matthijskooijman/arduino-lmic#dio-pins  Lora requires at least DIO0 and DIO1
 
 - https://jackgruber.github.io/2020-04-13-ESP32-DeepSleep-and-LoraWAN-OTAA-join/  Deep sleep lorawan
 
@@ -74,7 +74,9 @@ https://de.aliexpress.com/item/32793236869.html?spm=a2g0s.8937460.0.0.3a672e0eRf
 
 ## TODOs (next hw version)
 - Cutout around USB-C ?
+- Connectionpoint GNG-Current Measurement
 - Alternative battery with more capacity: LS14500(2.6Ah), LS17500(3.6Ah) , LS26500(7.7Ah) ?    Solder directly to pcb without holder: LS [14,17,26]500CNA, TADIRAN SL360P  ?
+- Change to Keystone 1015. Slightly longer but feel mechanically more robust.
 
 
  

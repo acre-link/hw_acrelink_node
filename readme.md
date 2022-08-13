@@ -1,4 +1,6 @@
 # AcreLink Node
+![Picture](media/pcb_and_sensor.JPG)
+
 - Designed for a sleep current around 6 to 7 uA. 
 - ESP32
 - RFM95 Lora Module
